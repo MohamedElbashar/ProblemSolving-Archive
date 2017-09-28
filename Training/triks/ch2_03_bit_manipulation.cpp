@@ -93,4 +93,6 @@ int main() {
   printf("S = %d, turn on last consecutive zeroes in S, S = %d\n", 36, turnOnLastConsecutiveZeroes(36));
 
   return 0;
+//  what happen if we add 1 to the number
+//  1-all the last significant 1's bit change to 0 and the the first 0 change to 1 and break
 }
