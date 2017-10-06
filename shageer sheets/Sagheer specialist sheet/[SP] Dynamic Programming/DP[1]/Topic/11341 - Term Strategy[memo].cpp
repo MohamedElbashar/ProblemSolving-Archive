@@ -41,9 +41,9 @@ int solve(int ind, int tot) {
 	int ret2 = -1e10;
 	for (int i = 1; i <= m; i++) {
 		if (tot >= i && arr[ind][i] >= 5)
-			ret2 = max(ret2, solve(ind + 1, tot - i) + arr[ind][i]);
+			ret = max(ret, solve(ind + 1, tot - i) + arr[ind][i]);
 	}
-	return ret = ret2;
+	return ret;
 }
 int main() {
 	file();
