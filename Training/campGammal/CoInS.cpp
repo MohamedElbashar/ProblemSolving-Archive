@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <iostream>
 #include <algorithm>
 #include<string.h>
@@ -12,12 +11,21 @@
 #include<set>
 using namespace std;
 long long int num;
-long long int memo[1000001];
+long long int memo[10000001];
+void file() {
+#ifndef ONLINE_JUDGE
+	freopen("in.txt", "r", stdin);
+	//freopen("out.txt", "w", stdout);
+#else
+	// online submission
+	//freopen("sets.in", "r", stdin);
+#endif
+}
 long long int solve(long long int x) {
 	if (x == 0) {
 		return 0;
 	}
-	if (x <= 1e6) {
+	if (x <= 1e7) {
 		if (memo[x] != -1) {
 			return memo[x];
 		}
@@ -30,10 +38,13 @@ long long int solve(long long int x) {
 
 }
 int main() {
-	cin >> num;
+	file();
 	memset(memo, -1, sizeof memo);
-	cout << solve(num);
-	cout << endl;
+	while (scanf("%lld", &num) != EOF) {
+
+		cout << solve(num);
+		cout << endl;
+	}
 
 }
 
