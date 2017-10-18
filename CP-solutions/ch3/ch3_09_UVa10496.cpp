@@ -14,7 +14,6 @@ int tsp(int pos, int bitmask) { // bitmask stores the visited coordinates
     return dist[pos][0]; // return trip to close the loop
   if (memo[pos][bitmask] != -1)
     return memo[pos][bitmask];
-
   int ans = 2000000000;
   for (int nxt = 0; nxt <= n; nxt++) // O(n) here
     if (nxt != pos && !(bitmask & (1 << nxt))) // if coordinate nxt is not visited yet
