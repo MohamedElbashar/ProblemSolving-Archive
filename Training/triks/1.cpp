@@ -316,3 +316,9 @@ printf("Max 1D Range Sum = %d\n", ans);
 //also in set_union,set_intersect
 set_difference(vc.begin(), vc.end(), node.begin(), node.end(),
 		inserter(diff, diff.begin()));
+
+//search for string in another string c++
+
+if (s1.find(s2) != std::string::npos) {
+	printf("Found")
+}
