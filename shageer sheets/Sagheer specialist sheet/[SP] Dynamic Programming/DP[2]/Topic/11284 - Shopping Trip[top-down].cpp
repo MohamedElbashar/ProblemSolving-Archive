@@ -27,9 +27,6 @@ void file() {
 	//freopen("sets.in", "r", stdin);
 #endif
 }
-#define isOn(S, j) (S & (1 << j))
-#define setBit(S, j) (S |= (1 << j))
-#define clearBit(S, j) (S &= ~(1 << j))
 //\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/
 int t, n, m, u, v, q, dists[51][51], memo[51][1 << 12], arr[51][51], sv[51],
 		vals[51], c, rem;
