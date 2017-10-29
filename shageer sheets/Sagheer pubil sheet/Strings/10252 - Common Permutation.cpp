@@ -32,7 +32,6 @@ int main() {
 	file();
 	string s, s2, str;
 	int cnt[26] { 0 }, cnt2[26] { 0 };
-	getchar();
 	while (getline(cin, s) && getline(cin, s2)) {
 		mem(cnt, 0), mem(cnt2, 0);
 		for (int i = 0; i < sz(s); i++)
