@@ -1,9 +1,7 @@
-//area of triangle (UxV)/2; nos el cross product bta3hm
 int gcd(int a, int b) {
-
 	return b == 0 ? a : gcd(b, a % b);
 
-}
+}//area of triangle (UxV)/2; nos el cross product bta3hm
 //check lw el num da men mod3fat el 8 wala la2
 if ( num % 8 == 0 )
 {
@@ -58,20 +56,6 @@ long factorial(int n) {
 	}
 	return fact;
 }
-int binary_search_to_get_first(int x, int y, int tar) {
-	while (x < y) {
-		int mid = x + (y - x) / 2; //or min=x(y-x+1)/2;   agarb el 2 w a4of men ele me4 hyd5lne fe INFL
-		if (arr[mid] < tar)
-			x = mid + 1;
-		else if (arr[mid] > tar)
-			y = mid - 1;
-		else
-			y = mid;
-	}
-	return x;
-}
-
-//st+(en-st)/2  lw galk infinite st+(en-st+1)/2
 //mmken  fabs(hi - lo) > EPS  being trapped in an infinite loop.
 double lo = 0.0, hi = 10000.0, mid = 0.0, ans = 0.0;
 for (int i = 0; i < 50; i++) { // log_2 ((10000.0 - 0.0) / 1e-9) ~= 43
@@ -206,6 +190,7 @@ struct pointt {
 	int x, y
 	//functions el gam3 wl tar7 wl darb ektbha enta b2a
 };
+//area of triangle (UxV)/2; nos el cross product bta3hm
 typedef complex<double> point;
 typedef
 #define X real()
@@ -289,8 +274,8 @@ remove_copy_if(str.begin(), str.end(), back_inserter(str2),ptr_fun<int, int>(::i
 
 abs(i-k) == abs(j-l).
 abs(i+k)==abs(j+l)
-This formula means that the vertical and horizontal distances between these two points are
-equal, i.e. point A and B lie on one of each other’s two diagonal lines.
+/*This formula means that the vertical and horizontal distances between these two points are
+equal, i.e. point A and B lie on one of each other’s two diagonal lines.*/
 
 //in the same line or not this not in the same line
 bool collinear(int x1, int y1, int x2, int y2, int x3, int y3) {
